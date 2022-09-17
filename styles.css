@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181818;
+    color:#EFEFEF ;
+}
+.container{
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 80%;
+    min-width: min-content;
+    background-color: #b8b5ff;
+    border-radius: 10px;
+}
+#Add_Tasks{
+    border-radius: 25px;
+    padding:10px;
+    border: 0;
+    background-color: rgba(60, 56, 56, 0.525);
+    cursor: pointer;
+    color:white;
+}
+::placeholder{
+    color: rgba(250, 235, 215, 0.541);
+}
+
+#Add_Tasks_button{
+    color: white;
+    height: 35px;
+    width: 30px;
+    border: 0;
+    border-radius: 25px;
+    background-color: rgba(60, 56, 56, 0.525);
+    cursor: pointer;
+}
+#taskList{
+    padding: 0;
+}
+#taskList li{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    margin: 5px;
+    color: #07035b;
+    font-family: Geneva, Verdana, sans-serif;
+}
+#taskList li #editButton{
+    margin-left: auto;
+    margin-right: 4px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1px 10px;
+    color: #204032;
+    font-size: medium;
+    background-color: transparent;
+    font-family:'Courier New', Courier, monospace;
+}
+#taskList li #editButton:hover{
+    font-weight: 600;
+    box-shadow:2px 2px gray;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(82, 80, 80);
+}
+#taskList li #delButton{
+    border: 1px solid black;
+    border-radius: 15px;
+    color: rgb(251, 249, 249);
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+}
+#taskList li #delButton:hover{
+    font-weight: 600;
+    color: #fd0000;
+    cursor: pointer;
+    box-shadow:2px 2px gray;
+}
+#taskList p{
+    display: flex;
+    align-items: center;
+    color: #120d0d;
+    text-decoration: line-through;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#checkbox{
+    height: 15px;
+    width: 15px;
+}
